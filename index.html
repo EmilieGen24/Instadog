@@ -8,80 +8,111 @@
 </head>
 <body>
     <header>
-        <h1 class="text-center-500">Instadog</h1>
-        <nav>
-            <div>
-                <img src="assets/img/house.png" alt="Icône home">
-                <img src="assets/img/message-square.png" alt="Icône message">
-                <img src="assets/img/plus.png" alt="Icône plus">
-                <img src="assets/img/compass.png" alt="Icône boussole">
-                <img src="assets/img/bell.png" alt="Icône notifications">
-                <img src="assets/img/profil.jpg" alt="Photo de profil">
-            </div>
-            <div>
-                <img src="assets/img/profil.jpg" alt="Photo de profil">
-                <img src="assets/img/dog-1.jpg" alt="Photo de profil de Rex">
-                <img src="assets/img/dog-2.jpg" alt="Photo de profil de Doug">
-                <img src="assets/img/dog-3.jpg" alt="Photo de profil de Luna">
-                <img src="assets/img/dog-1.jpg" alt="Photo de profil de Max">
-                <img src="assets/img/dog-2.jpg" alt="Photo de profil de Bella">
+        <nav class="box-border size-32 p-4">
+            <h1 class="font-bold text-center">Instadog</h1>
+            <div class="flex justify-around my-8 gap-1">
+                <img src="assets/img/house.png" class="w-10 h-10" alt="Icône home">
+                <img src="assets/img/message-square.png" class="w-10 h-10" alt="Icône message">
+                <img src="assets/img/plus.png" class="w-10 h-10" alt="Icône plus">
+                <img src="assets/img/compass.png" class="w-10 h-10" alt="Icône boussole">
+                <img src="assets/img/bell.png" class="w-10 h-10" alt="Icône notifications">
+                <img src="assets/img/profil.jpg" class="w-10 h-10 rounded-full border-1 border-gray-200" alt="Photo de profil">
             </div>
         </nav>
     </header>
-    <section>
-        <div>
-            <div>
-                <img src="assets/img/dog-1.jpg" alt="Photo de profil de Rex">
-                <p>Paris 2h</p>
+    <main>
+        <section>
+             <div class="flex gap-3 my-8 snap-x">
+                <div>
+                    <img src="assets/img/profil.jpg" class="w-10 h-10 rounded-full border-2 border-gray-200 p-0.5" alt="Photo de profil">
+                    <p class="text-xs text-center">moi</p>
+                </div>
+                <div>
+                    <img src="assets/img/dog-1.jpg" class="w-10 h-10 rounded-full bg-gradient-to-b from-orange-500 to-pink-500 p-0.5" alt="Photo de profil de Rex">
+                    <p class="text-xs text-center">rex</p>
+                </div>
+                <div>
+                    <img src="assets/img/dog-2.jpg" class="w-10 h-10 rounded-full bg-gradient-to-b from-orange-500 to-pink-500 p-0.5" alt="Photo de profil de Doug">
+                    <p class="text-xs text-center">doug</p>
+                </div>
+                <div>
+                    <img src="assets/img/dog-3.jpg" class="w-10 h-10 rounded-full bg-gradient-to-b from-orange-500 to-pink-500 p-0.5" alt="Photo de profil de Luna">
+                    <p class="text-xs text-center">luna</p>
+                </div>
+                <div>
+                    <img src="assets/img/dog-1.jpg" class="w-10 h-10 rounded-full bg-gradient-to-b from-orange-500 to-pink-500 p-0.5" alt="Photo de profil de Max">
+                    <p class="text-xs text-center">max</p>
+                </div>
+                <div>
+                    <img src="assets/img/dog-2.jpg" class="w-10 h-10 rounded-full bg-gradient-to-b from-orange-500 to-pink-500 p-0.5" alt="Photo de profil de Bella">
+                    <p class="text-xs text-center">bella</p>
+                </div>
             </div>
-            <div>
-                <img src="assets/img/dog-1.jpg" alt="Photo de profil de Rex">
+        </section>
+        <section>
+            <div class="flex-col my-8">
+                <div class="rounded border-2 border-gray-200 my-8 py-4">
+                    <div class="flex items-center">
+                        <div class="p-4">
+                            <img src="assets/img/dog-1.jpg" class="w-8 h-8 rounded-full" alt="Photo de profil de Rex">
+                        </div>
+                        <div>
+                            <p class="font-bold">rex</p>
+                            <p class="text-gray-500">Paris <time datetime="">2h</time></p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/img/dog-1.jpg" class="w-full h-1/6" alt="Photo de profil de Rex">
+                    </div>
+                    <div class="flex gap-3">
+                        <img src="assets/img/heart.png" alt="Icône coeur">
+                        <img src="assets/img/message-square.png" alt="Icône message">
+                        <img src="assets/img/send.png" alt="Icône send">
+                    </div>
+                    <div>
+                        <p><span class="font-bold">1234</span> j'aime</p>
+                        <p><span class="font-bold">rex</span> Incroyable les nouvelles croquettes que les humains m'ont achetés, elles sont folles !!</p>
+                        <a class="text-gray-500">Voir les 24 commentaires</a>
+                        <p class="text-gray-500 mt-2 text-xs">il y a 2 heures</p>
+                    </div>
+                </div>
+                <div class="rounded border-2 border-gray-200 py-4">
+                    <div>
+                        <div>
+                            <img src="assets/img/dog-2.jpg"class="w-8 h-8 rounded-full" alt="Photo de profil de Doug">
+                        </div>
+                        <div>
+                            <p class="font-bold">doug</p>
+                            <p class="text-gray-500">Lyon <time datetime="">5h</time></p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/img/dog-2.jpg" class="w-full h-1/6" alt="Photo de profil de Doug">
+                    </div>
+                    <div class="flex gap-3">
+                        <img src="assets/img/heart.png" alt="Icône coeur">
+                        <img src="assets/img/message-square.png" alt="Icône message">
+                        <img src="assets/img/send.png" alt="Icône send">
+                    </div>
+                    <div>
+                        <p><span class="font-bold">842</span> j'aime</p>
+                        <p><span class="font-bold">doug</span> Aujourd'hui, on a essayé le BARF, c'est incoyable !</p>
+                        <a class="text-gray-500">Voir les 15 commentaires</a>
+                        <p class="text-gray-500 mt-2 text-xs">il y a 5 heures</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="assets/img/heart.png" alt="Icône coeur">
-                <img src="assets/img/message-square.png" alt="Icône message">
-                <img src="assets/img/send.png" alt="Icône send">
-            </div>
-            <div>
-                <p>1234 j'aime</p>
-                <p><span>rex</span> Incroyable les nouvelles croquettes que les humains m'ont achetés, elles sont folles !!</p>
-                <p>Voir les 24 commentaires</p>
-                <p>il y a 2 heures</p>
-            </div>
-        </div>
-        <div>
-            <div>
-                <img src="assets/img/dog-2.jpg" alt="Photo de profil de Doug">
-                <p>Lyon 5h</p>
-            </div>
-            <div>
-                <img src="assets/img/dog-2.jpg" alt="Photo de profil de Doug">
-            </div>
-            <div>
-                <img src="assets/img/heart.png" alt="Icône coeur">
-                <img src="assets/img/message-square.png" alt="Icône message">
-                <img src="assets/img/send.png" alt="Icône send">
-            </div>
-            <div>
-                <p>842 j'aime</p>
-                <p><span>doug</span> Aijourd'hui, on a essayé le BARF, c'est incoyable !</p>
-                <p>Voir les 15 commentaires</p>
-                <p>il y a 5 heures</p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <footer>
-        <ul>
+        <ul class="flex justify-around text-gray-500 my-6">
             <li><a href="">A propos</a></li>
             <li><a href="">Aide</a></li>
             <li><a href="">Presse</a></li>
             <li><a href="">API</a></li>
             <li><a href="">Carrières</a></li>
         </ul>
-        <p>2025 Instadog</p>
-    </footer>
-
-
-    
+        <p class="text-gray-500 my-2 pl-3">2025 Instadog</p>
+    </footer>    
 </body>
 </html>
