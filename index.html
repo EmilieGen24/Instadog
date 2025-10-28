@@ -8,52 +8,57 @@
 </head>
 <body>
     <header>
-        <nav class="box-border size-32 p-4">
-            <h1 class="font-bold text-center">Instadog</h1>
-            <div class="flex justify-around my-8 gap-1">
-                <img src="assets/img/house.png" class="w-10 h-10" alt="Icône home">
-                <img src="assets/img/message-square.png" class="w-10 h-10" alt="Icône message">
-                <img src="assets/img/plus.png" class="w-10 h-10" alt="Icône plus">
-                <img src="assets/img/compass.png" class="w-10 h-10" alt="Icône boussole">
-                <img src="assets/img/bell.png" class="w-10 h-10" alt="Icône notifications">
-                <img src="assets/img/profil.jpg" class="w-10 h-10 rounded-full border-1 border-gray-200" alt="Photo de profil">
+        <nav class="border-b-2  border-gray-200">
+            <div class="md:flex md:justify-between md:items-center">
+                <h1 class="font-bold text-center md:text-left">Instadog</h1>
+                <div class="invisible md:visible">
+                    <input class="rounded-md border-2 border-gray-200 pl-4 px-10 bg-gray-100 text-xs" type="search" placeholder="Rechercher" id="search">
+                </div>
+                <div class="flex justify-center my-8 gap-4 md:my-2">
+                    <img src="assets/img/house.png" class="w-6 h-6" alt="Icône home">
+                    <img src="assets/img/message-square.png" class="w-6 h-6" alt="Icône message">
+                    <img src="assets/img/plus.png" class="w-6 h-6" alt="Icône plus">
+                    <img src="assets/img/compass.png" class="w-6 h-6" alt="Icône boussole">
+                    <img src="assets/img/bell.png" class="w-6 h-6" alt="Icône notifications">
+                    <img src="assets/img/profil.jpg" class="w-6 h-6 rounded-full border-2 border-gray-200" alt="Photo de profil">
+                </div>
             </div>
         </nav>
     </header>
     <main>
         <section>
-             <div class="flex gap-3 my-8 snap-x">
-                <div>
-                    <img src="assets/img/profil.jpg" class="w-10 h-10 rounded-full border-2 border-gray-200 p-0.5" alt="Photo de profil">
-                    <p class="text-xs text-center">moi</p>
-                </div>
-                <div>
-                    <img src="assets/img/dog-1.jpg" class="w-10 h-10 rounded-full bg-gradient-to-b from-orange-500 to-pink-500 p-0.5" alt="Photo de profil de Rex">
-                    <p class="text-xs text-center">rex</p>
-                </div>
-                <div>
-                    <img src="assets/img/dog-2.jpg" class="w-10 h-10 rounded-full bg-gradient-to-b from-orange-500 to-pink-500 p-0.5" alt="Photo de profil de Doug">
-                    <p class="text-xs text-center">doug</p>
-                </div>
-                <div>
-                    <img src="assets/img/dog-3.jpg" class="w-10 h-10 rounded-full bg-gradient-to-b from-orange-500 to-pink-500 p-0.5" alt="Photo de profil de Luna">
-                    <p class="text-xs text-center">luna</p>
-                </div>
-                <div>
-                    <img src="assets/img/dog-1.jpg" class="w-10 h-10 rounded-full bg-gradient-to-b from-orange-500 to-pink-500 p-0.5" alt="Photo de profil de Max">
-                    <p class="text-xs text-center">max</p>
-                </div>
-                <div>
-                    <img src="assets/img/dog-2.jpg" class="w-10 h-10 rounded-full bg-gradient-to-b from-orange-500 to-pink-500 p-0.5" alt="Photo de profil de Bella">
-                    <p class="text-xs text-center">bella</p>
-                </div>
-            </div>
+                <ul class="flex justify-center gap-4 my-8  max-[500px]:overflow-x-scroll md:justify-start">
+                    <li class="">
+                        <img src="assets/img/profil.jpg" class="w-16 h-16 rounded-full border-2 border-gray-200 p-0.5" alt="Photo de profil">
+                        <p class="text-xs text-center">moi</p>
+                    </li>
+                    <li class=" h-10">
+                        <img src="assets/img/dog-1.jpg" class="w-16 h-16 rounded-full bg-gradient-to-b from-orange-500 to-pink-500 p-0.5" alt="Photo de profil de Rex">
+                        <p class="text-xs text-center">rex</p>
+                    </li>
+                    <li>
+                        <img src="assets/img/dog-2.jpg" class="w-16 h-16 rounded-full bg-gradient-to-b from-orange-500 to-pink-500 p-0.5" alt="Photo de profil de Doug">
+                        <p class="text-xs text-center">doug</p>
+                    </li>
+                    <li>
+                        <img src="assets/img/dog-3.jpg" class="w-16 h-16 rounded-full bg-gradient-to-b from-orange-500 to-pink-500 p-0.5" alt="Photo de profil de Luna">
+                        <p class="text-xs text-center">luna</p>
+                    </li>
+                    <li>
+                        <img src="assets/img/dog-1.jpg" class="w-16 h-16 rounded-full bg-gradient-to-b from-orange-500 to-pink-500 p-0.5" alt="Photo de profil de Max">
+                        <p class="text-xs text-center">max</p>
+                    </li>
+                    <li>
+                        <img src="assets/img/dog-2.jpg" class="w-16 h-16 rounded-full bg-gradient-to-b from-orange-500 to-pink-500 p-0.5" alt="Photo de profil de Bella">
+                        <p class="text-xs text-center">bella</p>
+                    </li>
+                </ul>    
         </section>
-        <section>
-            <div class="flex-col my-8">
+        <section class="flex gap-5">
+            <div class="flex-col my-8 md:w-1/2">
                 <div class="rounded border-2 border-gray-200 my-8 py-4">
                     <div class="flex items-center">
-                        <div class="p-4">
+                        <div class="p-2">
                             <img src="assets/img/dog-1.jpg" class="w-8 h-8 rounded-full" alt="Photo de profil de Rex">
                         </div>
                         <div>
@@ -62,7 +67,7 @@
                         </div>
                     </div>
                     <div>
-                        <img src="assets/img/dog-1.jpg" class="w-full h-1/6" alt="Photo de profil de Rex">
+                        <img src="assets/img/dog-1.jpg" class="w-full h-1/6 py-2" alt="Photo de profil de Rex">
                     </div>
                     <div class="flex gap-3">
                         <img src="assets/img/heart.png" alt="Icône coeur">
@@ -72,13 +77,13 @@
                     <div>
                         <p><span class="font-bold">1234</span> j'aime</p>
                         <p><span class="font-bold">rex</span> Incroyable les nouvelles croquettes que les humains m'ont achetés, elles sont folles !!</p>
-                        <a class="text-gray-500">Voir les 24 commentaires</a>
+                        <a class="text-gray-500 py-2">Voir les 24 commentaires</a>
                         <p class="text-gray-500 mt-2 text-xs">il y a 2 heures</p>
                     </div>
                 </div>
                 <div class="rounded border-2 border-gray-200 py-4">
-                    <div>
-                        <div>
+                    <div class="flex items-center">
+                        <div class="p-2">
                             <img src="assets/img/dog-2.jpg"class="w-8 h-8 rounded-full" alt="Photo de profil de Doug">
                         </div>
                         <div>
@@ -87,7 +92,7 @@
                         </div>
                     </div>
                     <div>
-                        <img src="assets/img/dog-2.jpg" class="w-full h-1/6" alt="Photo de profil de Doug">
+                        <img src="assets/img/dog-2.jpg" class="w-full h-1/6 py-2" alt="Photo de profil de Doug">
                     </div>
                     <div class="flex gap-3">
                         <img src="assets/img/heart.png" alt="Icône coeur">
@@ -97,22 +102,49 @@
                     <div>
                         <p><span class="font-bold">842</span> j'aime</p>
                         <p><span class="font-bold">doug</span> Aujourd'hui, on a essayé le BARF, c'est incoyable !</p>
-                        <a class="text-gray-500">Voir les 15 commentaires</a>
+                        <a class="text-gray-500 py-2">Voir les 15 commentaires</a>
                         <p class="text-gray-500 mt-2 text-xs">il y a 5 heures</p>
                     </div>
                 </div>
             </div>
+            <div class="invisible md:visible text-xs">
+                <div class="flex items-center">
+                    <div class="p-2">
+                    <img src="assets/img/profil.jpg" class="w-10 h-10 rounded-full p-0.5" alt="Photo de profil">
+                </div>
+                <div class="text-xs">
+                    <p>moi</p>
+                    <p class="text-gray-500">Instadog</p>
+                </div>
+                <a href="" class="text-blue-500 text-end">Voir profil</a>
+                </div>
+                
+                    
+
+                
+                 <div class="p-2">
+                            <img src="assets/img/dog-2.jpg"class="w-10 h-10 rounded-full" alt="Photo de profil de Doug">
+                        </div>
+                        <div>
+                            <p class="font-bold">doug</p>
+                            <p class="text-gray-500">Lyon <time datetime="">5h</time></p>
+                        </div>
+
+
+            </div>
         </section>
     </main>
     <footer>
-        <ul class="flex justify-around text-gray-500 my-6">
+        <div class="text-xs pl-3">
+            <ul class="flex gap-4 text-gray-500 my-6">
             <li><a href="">A propos</a></li>
             <li><a href="">Aide</a></li>
             <li><a href="">Presse</a></li>
             <li><a href="">API</a></li>
             <li><a href="">Carrières</a></li>
         </ul>
-        <p class="text-gray-500 my-2 pl-3">2025 Instadog</p>
+        <p class="text-gray-500 my-2">2025 Instadog</p>
+        </div>
     </footer>    
 </body>
 </html>
