@@ -6,8 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    <header>
+<body class="box-border">
+    <header class="w-full max-w-5xl my-0 mx-auto py-0 px-5">
         <nav class="border-b-2  border-gray-200">
             <div class="md:flex md:justify-between md:items-center">
                 <h1 class="font-bold text-center md:text-left">Instadog</h1>
@@ -15,7 +15,7 @@
                     <input class="rounded-md border-2 border-gray-200 pl-4 px-10 bg-gray-100 text-xs" type="search" placeholder="Rechercher" id="search">
                 </div>
                 <div class="flex justify-center my-8 gap-4 md:my-2">
-                    <img src="assets/img/house.png" class="w-6 h-6" alt="Icône home">
+                    <img src="assets/img/house.png" class="size-6" alt="Icône home">
                     <img src="assets/img/message-square.png" class="w-6 h-6" alt="Icône message">
                     <img src="assets/img/plus.png" class="w-6 h-6" alt="Icône plus">
                     <img src="assets/img/compass.png" class="w-6 h-6" alt="Icône boussole">
@@ -25,14 +25,14 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="w-full max-w-5xl my-0 mx-auto py-0 px-5">
         <section>
-                <ul class="flex justify-center gap-4 my-8  max-[500px]:overflow-x-scroll md:justify-start">
+                <ul class="flex justify-center gap-4 my-8 md:my-5  max-[500px]:overflow-x-scroll md:justify-start">
                     <li class="">
                         <img src="assets/img/profil.jpg" class="w-16 h-16 rounded-full border-2 border-gray-200 p-0.5" alt="Photo de profil">
                         <p class="text-xs text-center">moi</p>
                     </li>
-                    <li class=" h-10">
+                    <li class="">
                         <img src="assets/img/dog-1.jpg" class="w-16 h-16 rounded-full bg-gradient-to-b from-orange-500 to-pink-500 p-0.5" alt="Photo de profil de Rex">
                         <p class="text-xs text-center">rex</p>
                     </li>
@@ -54,8 +54,8 @@
                     </li>
                 </ul>    
         </section>
-        <section class="flex gap-5">
-            <div class="flex-col my-8 md:w-1/2">
+        <section class="md:flex gap-5 md:justify-around">
+            <div class="flex-col my-8 md:my-0 md:w-2/3">
                 <div class="rounded border-2 border-gray-200 my-8 py-4">
                     <div class="flex items-center">
                         <div class="p-2">
@@ -69,15 +69,15 @@
                     <div>
                         <img src="assets/img/dog-1.jpg" class="w-full h-1/6 py-2" alt="Photo de profil de Rex">
                     </div>
-                    <div class="flex gap-3">
+                    <div class="flex gap-3 pl-3">
                         <img src="assets/img/heart.png" alt="Icône coeur">
                         <img src="assets/img/message-square.png" alt="Icône message">
                         <img src="assets/img/send.png" alt="Icône send">
                     </div>
-                    <div>
+                    <div class="px-3">
                         <p><span class="font-bold">1234</span> j'aime</p>
-                        <p><span class="font-bold">rex</span> Incroyable les nouvelles croquettes que les humains m'ont achetés, elles sont folles !!</p>
-                        <a class="text-gray-500 py-2">Voir les 24 commentaires</a>
+                        <p><span class="font-bold">rex</span> Incroyable les nouvelles croquettes que les humains m'ont achetés, elles sont folles !! <img src="assets/img/chien.png" class="size-5 inline" alt=""></p>
+                        <a class="text-gray-500 py-2 hover:underline">Voir les 24 commentaires</a>
                         <p class="text-gray-500 mt-2 text-xs">il y a 2 heures</p>
                     </div>
                 </div>
@@ -94,48 +94,90 @@
                     <div>
                         <img src="assets/img/dog-2.jpg" class="w-full h-1/6 py-2" alt="Photo de profil de Doug">
                     </div>
-                    <div class="flex gap-3">
+                    <div class="flex gap-3 pl-3">
                         <img src="assets/img/heart.png" alt="Icône coeur">
                         <img src="assets/img/message-square.png" alt="Icône message">
                         <img src="assets/img/send.png" alt="Icône send">
                     </div>
-                    <div>
+                    <div class="px-3">
                         <p><span class="font-bold">842</span> j'aime</p>
-                        <p><span class="font-bold">doug</span> Aujourd'hui, on a essayé le BARF, c'est incoyable !</p>
-                        <a class="text-gray-500 py-2">Voir les 15 commentaires</a>
+                        <p><span class="font-bold">doug</span> Aujourd'hui, on a essayé le BARF, c'est incoyable ! <img src="assets/img/soleil.png" class="size-5 inline" alt=""></p>
+                        <a class="text-gray-500 py-2 hover:underline">Voir les 15 commentaires</a>
                         <p class="text-gray-500 mt-2 text-xs">il y a 5 heures</p>
                     </div>
                 </div>
             </div>
-            <div class="invisible md:visible text-xs">
-                <div class="flex items-center">
-                    <div class="p-2">
-                    <img src="assets/img/profil.jpg" class="w-10 h-10 rounded-full p-0.5" alt="Photo de profil">
-                </div>
-                <div class="text-xs">
-                    <p>moi</p>
-                    <p class="text-gray-500">Instadog</p>
-                </div>
-                <a href="" class="text-blue-500 text-end">Voir profil</a>
-                </div>
-                
-                    
-
-                
-                 <div class="p-2">
-                            <img src="assets/img/dog-2.jpg"class="w-10 h-10 rounded-full" alt="Photo de profil de Doug">
+            <div class="invisible md:visible text-xs md:w-1/3">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                        <div class="p-2">
+                            <img src="assets/img/profil.jpg" class="w-10 h-10 rounded-full p-0.5" alt="Photo de profil">
                         </div>
-                        <div>
-                            <p class="font-bold">doug</p>
-                            <p class="text-gray-500">Lyon <time datetime="">5h</time></p>
+                        <div class="text-xs">
+                            <p>moi</p>
+                            <p class="text-gray-500">Instadog</p>
                         </div>
+                    </div>
+                    <div>
+                        <a href="" class="text-blue-500 font-bold hover:underline">Voir profil</a>
+                    </div> 
+                </div>
+                <div class="flex justify-between items-center mt-2">
+                    <div>
+                        <p class="text-gray-500">Suggestions pour vous</p>
+                    </div>
+                    <div>
+                        <p class="font-bold hover:underline">Tout voir</p>
+                    </div>
 
-
+                </div>
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                        <div class="p-2">
+                            <img src="assets/img/dog-1.jpg" class="w-10 h-10 rounded-full p-0.5" alt="Photo de rex">
+                        </div>
+                        <div class="text-xs">
+                            <p>rex</p>
+                            <p class="text-gray-500">Populaire</p>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="" class="text-blue-500 font-bold hover:underline">Suivre</a>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                        <div class="p-2">
+                            <img src="assets/img/dog-2.jpg" class="w-10 h-10 rounded-full p-0.5" alt="Photo de rex">
+                        </div>
+                        <div class="text-xs">
+                            <p>doug</p>
+                            <p class="text-gray-500">Suggéré</p>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="" class="text-blue-500 font-bold hover:underline">Suivre</a>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                        <div class="p-2">
+                            <img src="assets/img/dog-3.jpg" class="w-10 h-10 rounded-full p-0.5" alt="Photo de rex">
+                        </div>
+                        <div class="text-xs">
+                            <p>luna</p>
+                            <p class="text-gray-500">Nouveau</p>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="" class="text-blue-500 font-bold hover:underline">Suivre</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="text-xs pl-3">
+    <footer class="w-full max-w-5xl my-0 mx-auto py-0 px-5">
+        <div class="text-xs">
             <ul class="flex gap-4 text-gray-500 my-6">
             <li><a href="">A propos</a></li>
             <li><a href="">Aide</a></li>
