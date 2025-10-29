@@ -10,11 +10,14 @@
     <header class="w-full max-w-5xl my-0 mx-auto py-0 px-5">
         <nav class="border-b-2  border-gray-200">
             <div class="md:flex md:justify-between md:items-center">
-                <h1 class="font-bold text-center md:text-left">Instadog</h1>
+                <div class="flex items-center justify-center">
+                    <img src="assets/img/instagram.png" class="size-5" alt="Logo instagram">
+                    <h1 class="font-bold text-center md:text-left">Instadog</h1>
+                </div>
                 <div class="invisible md:visible">
                     <input class="rounded-md border-2 border-gray-200 pl-4 px-10 bg-gray-100 text-xs" type="search" placeholder="Rechercher" id="search">
                 </div>
-                <div class="flex justify-center my-8 gap-4 md:my-2">
+                <div class="flex justify-center my-2 gap-4 md:my-2">
                     <img src="assets/img/house.png" class="size-6" alt="Icône home">
                     <img src="assets/img/message-square.png" class="w-6 h-6" alt="Icône message">
                     <img src="assets/img/plus.png" class="w-6 h-6" alt="Icône plus">
@@ -26,9 +29,9 @@
         </nav>
     </header>
     <main>
-        <section class="w-full max-w-5xl my-0 mx-auto py-0 px-5 ">
-            <div class="border-2 border-gray-200 my-5 rounded-t-md">
-                <h2 class="py-4 pl-3 border-b-2 border-gray-200">Messages</h2>
+        <section class="w-full max-w-5xl my-0 mx-auto py-0 px-5 md:flex">
+            <div class="border-2 border-gray-200 rounded-tl-md mt-5 max-[768px]:rounded-tr-md md:w-1/3">
+                <h2 class="py-4 pl-3 border-b-2 border-gray-200 font-bold">Messages</h2>
                 <div class="flex items-center justify-between">
                     <div class="flex gap-2 items-center p-3">
                         <div>
@@ -49,22 +52,23 @@
                     </div>
                     <div>
                         <p class="font-bold">doug</p>
-                        <p class="text-gray-400 text-xs">Il ya 5 min</p>
+                        <p class="text-gray-400 text-xs">Il y a 5 min</p>
                     </div>
                 </div>
-                <div class="flex gap-2 items-center p-3 border-t-2 border-b-2 border-gray-200">
+                <div class="flex gap-2 items-center p-3 border-t-2 border-gray-200">
                     <div>
                         <img src="assets/img/dog-3.jpg" class="size-10 rounded-full" alt="Photo de profil de luna">
                     </div>
                     <div>
                         <p class="font-bold">luna</p>
-                        <p class="text-gray-400 text-xs">Tapez pour puvrir</p>
+                        <p class="text-gray-400 text-xs">Tapez pour ouvrir</p>
                     </div>
                 </div>
             </div>
-                <div class="flex items-center justify-between">
+            <div class="md:mt-5 md:w-2/3">
+                <div class="flex items-center justify-between border-r-2 max-[768px]:border-l-2 border-gray-200 md:border-t-2 md:rounded-tr-md">
                     <div class="flex gap-2 items-center p-3"> 
-                        <div>
+                         <div>
                             <img src="assets/img/dog-1.jpg" class="size-10 rounded-full" alt="Photo de profil de rex">
                         </div>
                         <div>
@@ -73,23 +77,60 @@
                         </div>
                     </div>
                     <div class="pr-5">
-                        <img src="assets/img/info.png" class="size-5" alt="">
+                        <img src="assets/img/info.png" class="size-5" alt="Icône information">
                     </div> 
                 </div>
+                <div class=" flex-col border-y-2 border-r-2 max-[768px]:border-l-2 border-gray-200 bg-gray-100 pb-10">
+                    <div class="flex mx-5 gap-2 p-3"> 
+                        <div class="shrink-0">
+                            <img src="assets/img/dog-1.jpg" class="size-10 rounded-full" alt="Photo de profil de rex">
+                        </div>
+                        <div class="border-2 p-3 border-gray-200 rounded-bl-xl rounded-br-xl rounded-tr-xl bg-white md:w-1/2">
+                            <p class="md:inline-block">Hello ! Prêt pour la balade ?</p>
+                            <div class="pb-3 md:inline-block md:p-0">
+                                <img src="assets/img/impressions-danimaux.png" class="size-4" alt="Image pattes de chien">
+                            </div>
+                            <p class="text-gray-400 text-xs">14:12</p>
+                        </div>
+                    </div>
+                    <div class="flex mx-5 gap-2 p-3 md:justify-end">
+                        <div class="border-2 p-3 border-gray-200 rounded-bl-xl rounded-br-xl rounded-tl-xl bg-blue-600">
+                            <p class="text-white">Toujours ! On se retrouve au parc.</p>
+                            <p class="text-gray-400 text-xs mt-3">14:13 . Vu</p>
+                        </div>
+                        <div class="shrink-0">
+                            <img src="assets/img/profil.jpg" class="size-10 rounded-full" alt="photo de profil">
+                        </div>
+                    </div>
+                    <div class="flex mx-5 gap-2 p-3">
+                        <div class="shrink-0">
+                            <img src="assets/img/dog-1.jpg" class="size-10 rounded-full" alt="photo de profil">
+                        </div>
+                        <div class="border-2 p-3 border-gray-200 rounded-bl-xl rounded-br-xl rounded-tr-xl bg-white">
+                            <p>Parfait ! J'apporte les friandises !</p>
+                            <p class="text-gray-400 text-xs mt-3">14:15</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center gap-1 border-r-2 max-[768px]:border-l-2 border-b-2 border-gray-200 max-[768px]:rounded-bl-md rounded-br-md py-3 shrink">
+                    <img src="assets/img/image.png" class="size-5" alt="Icône photo">
+                    <input type="text" name="" placeholder="Message..." class="border-2 rounded-2xl border-gray-200 pl-3 py-0.5 md:w-3/4" id="">
+                    <input type="submit" value="Envoyer" class="border-2 rounded-2xl bg-blue-600 text-white px-3 py-0.5">
+                </div>
+            </div>
         </section>
     </main>
     <footer class="w-full max-w-5xl my-0 mx-auto py-0 px-5">
-        <div class="text-xs">
-            <ul class="flex gap-4 text-gray-500 my-6">
-            <li><a href="">A propos</a></li>
-            <li><a href="">Aide</a></li>
-            <li><a href="">Presse</a></li>
-            <li><a href="">API</a></li>
-            <li><a href="">Carrières</a></li>
-        </ul>
-        <p class="text-gray-500 my-2">© 2025 Instadog</p>
+        <div class="text-xs mt-10 md:flex md:items-center md:gap-4">
+            <ul class="flex gap-4 text-gray-500 my-4">
+                <li><a href="">A propos</a></li>
+                <li><a href="">Aide</a></li>
+                <li><a href="">Presse</a></li>
+                <li><a href="">API</a></li>
+                <li><a href="">Carrières</a></li>
+            </ul>
+            <p class="text-gray-500 my-2">© 2025 Instadog</p>
         </div>
     </footer>
-    
 </body>
 </html>
