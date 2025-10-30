@@ -988,6 +988,14 @@
       }
     }
   }
+  .hover\:border-t-2 {
+    &:hover {
+      @media (hover: hover) {
+        border-top-style: var(--tw-border-style);
+        border-top-width: 2px;
+      }
+    }
+  }
   .hover\:border-black {
     &:hover {
       @media (hover: hover) {
@@ -1023,10 +1031,24 @@
       }
     }
   }
+  .hover\:stroke-black {
+    &:hover {
+      @media (hover: hover) {
+        stroke: var(--color-black);
+      }
+    }
+  }
   .hover\:stroke-pink-600 {
     &:hover {
       @media (hover: hover) {
         stroke: var(--color-pink-600);
+      }
+    }
+  }
+  .hover\:text-black {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-black);
       }
     }
   }
