@@ -19,8 +19,8 @@
                 </div>
                 <ul class="flex justify-center my-2 gap-4 md:my-2">
                     <li><a href="home.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house-icon lucide-house  hover:stroke-pink-600 transition delay-150 duration-300 ease-in-out"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></a></li>
-                    <li><a href="messages.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square-icon lucide-message-square  hover:stroke-pink-600 transition delay-150 duration-300 ease-in-out"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/></svg></a></li>
-                    <li><a href="nouveau.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus-icon lucide-plus  hover:stroke-pink-600 transition delay-150 duration-300 ease-in-out"><path d="M5 12h14"/><path d="M12 5v14"/></svg></a></li>
+                    <li class="flex"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square-icon lucide-message-square stroke-black hover:stroke-pink-600 transition delay-150 duration-300 ease-in-out"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/></svg><a href="messages.html" class="text-white text-xs text-center rounded-full bg-red-600 size-4">1</a></li>
+                    <li><a href="creation.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus-icon lucide-plus rounded-full bg-gray-300 stroke-pink-600"><path d="M5 12h14"/><path d="M12 5v14"/></svg></a></li>
                     <li><a href="acces.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-compass-icon lucide-compass  hover:stroke-pink-600 transition delay-150 duration-300 ease-in-out"><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/><circle cx="12" cy="12" r="10"/></svg></a></li>
                     <li><a href="notifications.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bell-icon lucide-bell  hover:stroke-pink-600 transition delay-150 duration-300 ease-in-out"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></svg></a></li>
                     <li><a href=""><img src="assets/img/profil.jpg" class="w-6 h-6 rounded-full border-2 border-gray-200" alt="Photo de profil"></a></li>
@@ -29,22 +29,54 @@
         </nav>
     </header>
     <main>
-        <section>
-            <div>
-
+        <section class="w-full max-w-5xl my-0 mx-auto py-0 px-5 bg-gray-100">
+            <div class="border-2 rounded-t-lg border-gray-200 bg-white">
+                <h2 class="font-bold text-center border-b-2 border-gray-200 py-3">Créer une publication</h2>
+                <div class="text-xs text-center border-2 border-dotted rounded-lg border-gray-300 m-5 py-5">
+                    <div class="flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-image-plus-icon lucide-image-plus stroke-gray-400 hover:stroke-black"><path d="M16 5h6"/><path d="M19 2v6"/><path d="M21 11.5V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7.5"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/><circle cx="9" cy="9" r="2"/></svg>
+                    </div>
+                    <p class="text-gray-400 font-bold py-2 hover:underline"><span class="text-purple-500 hover:underline">Téléverser une photo</span> ou glissez-déposez</p>
+                    <p class="text-gray-400">PNG, JPG, GIF jusqu'à 10MB</p>
+                </div>
+                <div class="m-5">
+                    <h3 class="mb-2">Légende</h3>
+                    <div class="border-2 border-gray-200 rounded-lg pb-10 pt-2">
+                        <p class="text-gray-400 pl-3">Ajoutez une légende...</p>
+                    </div>
+                    <p class="text-gray-400">Décrivez votre phot avec des mots-clés et des hashtags comme #chien #adoption #bienaimé</p>
+                </div>
+                <div class="border-b-2 border-gray-200 pb-5 m-5">
+                    <h3 class="mb-2">Localisation</h3>
+                    <div class="border-2 rounded-lg border-gray-300 py-2">
+                        <p class="text-gray-400 pl-3">Ajoutez un lieu</p>
+                    </div>
+                </div>
+                <div class="m-5">
+                    <div class="flex mb-10">
+                        <p class="">Options avancées</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                    </div>
+                    <div class="flex justify-center">
+                        <a href="" class="border-2 bg-blue-700 text-white rounded-md w-full py-2 text-center">Partager</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <footer class="w-full max-w-5xl my-0 mx-auto py-0 px-5">
-        <div class="text-xs my-10 md:flex md:items-center md:gap-4">
-            <ul class="flex gap-4 text-gray-500">
+        <div class="text-xs my-10">
+            <ul class="md:flex gap-4 md:justify-center text-gray-500 my-5">
                 <li><a href="" class="hover:underline">A propos</a></li>
                 <li><a href="" class="hover:underline">Aide</a></li>
                 <li><a href="" class="hover:underline">Presse</a></li>
                 <li><a href="" class="hover:underline">API</a></li>
-                <li><a href="" class="hover:underline">Carrières</a></li>
+                <li><a href="" class="hover:underline">Emplois</a></li>
+                <li><a href="" class="hover:underline">Confidentialité</a></li>
+                <li><a href="" class="hover:underline">Conditions</a></li>
+                <li><a href="" class="hover:underline">Lieux</a></li>
             </ul>
-            <p class="text-gray-500">© 2025 Instadog</p>
+            <p class="text-gray-500 text-center">© 2025 Instadog</p>
         </div>
     </footer> 
 </body>
